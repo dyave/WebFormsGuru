@@ -25,7 +25,23 @@ namespace WebFormsGuru
 
             ConnectionToDbWithReader();
 
-            ForceToSeeDefaultErrorPage();
+            //ForceToSeeDefaultErrorPage();
+
+            CuriosityOfPlusPlus();
+        }
+
+        private void CuriosityOfPlusPlus()
+        {
+            int c = 7;
+            int k = 7;
+            Response.Write("c:");
+            Response.Write(c++);
+            Response.Write("k:");
+            Response.Write(++k);
+            Response.Write(">c:");
+            Response.Write(c);
+            Response.Write(">k:");
+            Response.Write(k);
         }
 
         private void ForceToSeeDefaultErrorPage()
